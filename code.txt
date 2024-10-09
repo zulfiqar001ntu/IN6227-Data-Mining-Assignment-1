@@ -6,7 +6,8 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 import time
-2. Load the Census Income Dataset
+
+2. Load Census Income Dataset
 # URL for the Census Income dataset (Adult dataset)
 url = 'https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data'
 
@@ -20,6 +21,7 @@ data = pd.read_csv(url, header=None, names=column_names, na_values=' ?', skipini
 # Display basic information about the dataset
 print(data.info())
 print(data.head())
+
 3. Data Preprocessing
 # Drop rows with missing values
 data = data.dropna()
